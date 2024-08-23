@@ -87,6 +87,11 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.landing-name, 
+.landing-description {
+  color: #ffffff !important;
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -173,8 +178,8 @@ h6 {
 }
 
 .header .header-social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding-left: 6px;
+  color: #ffffff;
+  padding-left: 10px;
   display: inline-block;
   transition: 0.3s;
   font-size: 16px;
@@ -697,6 +702,16 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero:before {
+  content: "";
+  background: transparent 30%;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image: linear-gradient(#0000007d, rgb(0 0 0 / 92%));
+  background-position: center;
 }
 
 @media (max-width: 1200px) {
@@ -1415,9 +1430,99 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.features .features-item {
+  background-color: var(--surface-color);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+}
+
+.features .features-item i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 0;
+}
+
+.features .features-item h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.features .features-item h3 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.features .features-item:hover {
+  border-color: var(--accent-color);
+}
+
+.features .features-item:hover h3 a {
+  color: var(--accent-color);
+}
+
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+.logo-size img {
+  filter: invert(1) brightness(2);
+}
+
+.icons {
+  max-width: 35px;
+  margin-right: 8px;
+}
+
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This ensures spacing between elements */
+}
+
+.skill {
+  flex-grow: 1; /* This allows the skill name to take up remaining space */
+  margin-left: 8px; /* Adjust as needed */
+  font-style: normal;
+}
+
+.progress .icon-wrap i{
+  font-family: var(--heading-font) ;
+  font-style: normal;
+}
+
+.percentage {
+  margin-left: 8px; /* Adjust as needed */
+  white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.progress-bar-wrap {
+  position: relative;
+  margin-top: 4px;
+}
+
+.progress-bar {
+  width: 100%; /* Assuming the progress bar width corresponds to the percentage */
+  height: 8px; /* Adjust the height as needed */
+  background-color: #4caf50; /* Adjust the color as needed */
+  border-radius: 4px; /* Adjust if you want rounded corners */
+}
+
+
+#typer{
+  color: #ffffff;
+  letter-spacing: 3px;
 }
