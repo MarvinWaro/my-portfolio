@@ -39,12 +39,15 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Kelly</h1>
+          <div class="logo-size">
+            <img src="assets/img/myImg/my-logo.png" alt="MW logo">
+          </div>
+        
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -91,13 +94,15 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <img src="assets/img/myImg/landing.jpg" alt="" data-aos="fade-in">
-
+      <div class="landing-img-wraper">
+        <img class="landing-img" src="assets/img/myImg/landing.jpg" alt="" data-aos="fade-in">
+      </div>
+      
       <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Marvin Adamsskie</h2>
-            <p>I'm a professional illustrator from San Francisco</p>
+            <h2 class="landing-name">Marvin Waro</h2>
+            <p id="typer"><span class="typed" data-typed-items="Junior Software Engineer"></span></p>
             <a href="about.html" class="btn-get-started">About Me</a>
           </div>
         </div>
@@ -146,6 +151,9 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
