@@ -1607,9 +1607,74 @@ section,
 }
 
 .about-pic{
-  border-radius: 10px;
-  border: 2px solid crimson;
+  border-radius: 6px;
+  border: 2px solid gray;
 }
+
+/* .cv {
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease, filter 0.3s ease; 
+}
+
+.cv:hover {
+  background-color: var(--accent-color);
+  opacity: 80%;
+}
+
+
+.cv a{
+  color: #ffffff !important;
+  text-decoration: none;
+} */
+
+
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: var(--accent-color);
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 2px solid var(--accent-color);
+  z-index: 1;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #ffffff;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+}
+
+.btn-41:hover {
+  color: var(--accent-color);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+
 
 
 
