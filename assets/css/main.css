@@ -149,7 +149,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: #ffffff;
-  background-color: #4D5458 ;
+  background-color: #25282A ;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -345,7 +345,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #ffffff;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -819,7 +819,7 @@ section,
 .skills .progress .skill {
   color: var(--heading-color);
   padding: 0;
-  margin: 0 0 6px 0;
+  /* margin: 0 0 6px 0; */
   text-transform: uppercase;
   display: block;
   font-weight: 600;
@@ -838,7 +838,7 @@ section,
 
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 9px;
   transition: 0.9s;
   background-color: var(--accent-color);
 }
@@ -1482,6 +1482,11 @@ section,
   filter: invert(1) brightness(2);
 }
 
+.logo-footer{
+  max-width: 25px;
+  margin: 0 5px;
+}
+
 .icons {
   max-width: 35px;
   margin-right: 8px;
@@ -1519,6 +1524,7 @@ section,
   height: 8px; /* Adjust the height as needed */
   background-color: #4caf50; /* Adjust the color as needed */
   border-radius: 4px; /* Adjust if you want rounded corners */
+  transition: width 2s ease-in-out;
 }
 
 
@@ -1526,3 +1532,84 @@ section,
   color: #ffffff;
   letter-spacing: 3px;
 }
+
+.skill-heading-wrapper {
+  text-align: center; /* Centers the heading */
+  margin-bottom: 40px; /* Adds space below the section title */
+  position: relative; /* Needed for positioning the underline */
+}
+
+.skill-heading-wrapper .type-skill {
+  font-size: 20px; /* Size of the heading text */
+  font-weight: 600; /* Makes the heading bold */
+  margin-bottom: 20px; /* Space below the text */
+  padding-bottom: 20px; /* Space between text and underline */
+  position: relative; /* Allows the pseudo-element to position correctly */
+  display: inline-block; /* Keeps the underline centered under the text */
+}
+
+.skill-heading-wrapper .type-skill::after {
+  content: "";
+  position: absolute;
+  width: 70px; /* Width of the underline */
+  height: 3px; /* Thickness of the underline */
+  background: var(--accent-color); /* Use your desired color */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto; /* Centers the underline */
+}
+
+
+/* button edit */
+
+.heading-wrapper{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text inside the column */
+}
+
+.bn39 {
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  height: 50px;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 3px;
+  position: relative;
+  text-decoration: none;
+  width: 8em;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+
+.bn39:hover {
+  color: #fff;
+}
+
+.bn39 .bn39span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn39:hover .bn39span {
+  background: transparent;
+}
+
+.about-pic{
+  border-radius: 10px;
+  border: 2px solid crimson;
+}
+
+
+
