@@ -1676,5 +1676,18 @@ section,
 }
 
 
+.resume-icon {
+  max-width: 50px;
+  max-height: 50px; /* Ensures the icon remains square */
+  height: auto; /* Maintains aspect ratio */
+  width: auto; /* Maintains aspect ratio */
+}
+
+.greater-than{
+  color: var(--accent-color);
+}
+
+
+
 
 
