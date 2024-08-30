@@ -1,15 +1,3 @@
-/**
-* Template Name: Kelly
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1684,8 +1672,10 @@ section,
   background-color: #ffffff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index: 1;
+  z-index: 1000; /* Ensure it appears above other elements */
   min-width: 150px;
+  bottom: 100%; /* Position the dropdown menu above the button */
+  left: 0; /* Align with the button */
 }
 
 .dropdown-menu li {
@@ -1709,10 +1699,23 @@ section,
   display: block;
 }
 
-
-.dl-button{
+.dl-button {
   width: 100%;
 }
+
+/* Ensure dropdown stays above footer */
+.dropdown-menu.show {
+  display: block;
+  bottom: auto; /* Reset the bottom property */
+  top: calc(100% + 10px); /* Position the dropdown below the button when space allows */
+}
+
+.no-link{
+  color: var(--default-color);
+  text-decoration: none !important;
+}
+
+
 
 
 
