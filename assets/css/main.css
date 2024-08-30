@@ -1603,7 +1603,116 @@ section,
   font-weight: 600;
 }
 
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
+.download-btn i {
+  margin-right: 5px;
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+
+/* .for-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+} */
+
+/* .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  flex: 1; 
+} */
+
+
+
+
+/* Media Query for Tablet and Phone Sizes */
+/* @media (max-width: 768px) {
+  .for-buttons {
+      flex-direction: column;
+  }
+
+  .btn {
+      width: 100%; 
+      text-align: center;
+  }
+} */
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #ffffff;
+  border-radius: 10px;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+  min-width: 150px;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  color: var(--accent-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.dl-button{
+  width: 100%;
+}
 
 
 
