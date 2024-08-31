@@ -1715,6 +1715,10 @@ section,
   text-decoration: none !important;
 }
 
+.no-link:hover{
+  color: var(--default-color);
+}
+
 
 
 
